@@ -11,18 +11,18 @@ function App() {
   const elements = document.querySelectorAll(".panel");
 
   useEffect(() => {
-    elements.forEach((panel) => {
+    elements?.forEach((panel) => {
       console.log(panel);
-      panel.addEventListener("click", () => {
+      panel?.addEventListener("click", () => {
         removeActiveclass();
-        panel.classList.add("active");
+        panel?.classList.add("active");
       });
     });
   }, []);
 
   const removeActiveclass = () => {
-    elements.forEach((panel) => {
-      panel.classList.remove("active");
+    elements?.forEach((panel) => {
+      panel?.classList.remove("active");
     });
   };
 
