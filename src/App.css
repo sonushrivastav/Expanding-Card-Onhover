@@ -14,3 +14,23 @@ body{
     margin: 0;
     background-color: #F9F9F9;
 }
+
+.container{
+  display: flex;
+  width: 90vw;
+}
+
+.panel{
+    background-size: auto 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: .5;
+    margin: 10px;
+    position: relative;
+    transition: flex .7s ease-in;
+    -webkit-transition: all 700ms ease-in;
+}
