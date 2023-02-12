@@ -11,7 +11,7 @@ function App() {
   const elements = document.querySelectorAll(".panel");
 
   useEffect(() => {
-    elements.forEach((panel) => {
+    elements?.forEach((panel) => {
       console.log(panel);
       panel.addEventListener("click", () => {
         removeActiveclass();
@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const removeActiveclass = () => {
-    elements.forEach((panel) => {
+    elements?.forEach((panel) => {
       panel?.classList.remove("active");
     });
   };
@@ -32,10 +32,10 @@ function App() {
         <h3>I don't remember the name</h3>
       </div>
       <div className="panel" style={{ backgroundImage: `url(${img2})` }}>
-        <h3>Sword art online</h3>
+        <h3>Lady Anime with Magic</h3>
       </div>
       <div className="panel" style={{ backgroundImage: `url(${img3})` }}>
-        <h3>Forgot the name tbh</h3>
+        <h3>The Boy with Piano</h3>
       </div>
       <div className="panel" style={{ backgroundImage: `url(${img4})` }}>
         <h3>Demon Slayer : Tanjiro</h3>

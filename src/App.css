@@ -28,10 +28,10 @@ body{
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
-    flex: .5;
+    flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: flex .7s ease-in;
+    transition: flex 0.7s ease-in;
     -webkit-transition: all 700ms ease-in;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 .panel.active{
-    flex: 3.5;
+    flex: 3.6;
 }
 
 .panel.active h3{
