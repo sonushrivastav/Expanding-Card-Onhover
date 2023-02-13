@@ -8,21 +8,21 @@ import img4 from "./assets/Anime-4.jpg";
 import img5 from "./assets/Anime-5.jpg";
 
 function App() {
-  const elements = document.querySelectorAll(".panel");
-
+  
   useEffect(() => {
+    const elements = document.querySelectorAll(".panel");
     elements.forEach((panel) => {
       console.log(panel);
-      panel?.addEventListener("click", () => {
+      panel.addEventListener("click", () => {
         removeActiveclass();
-        panel?.classList?.add("active");
+        panel.classList.add("active");
       });
     });
   }, []);
 
   const removeActiveclass = () => {
     elements.forEach((panel) => {
-      panel?.classList?.remove("active");
+      panel.classList.remove("active");
     });
   };
 
