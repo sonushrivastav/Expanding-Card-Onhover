@@ -9,20 +9,19 @@ import img5 from "./assets/Anime-5.jpg";
 
 function App() {
   
-  const elements = document.querySelectorAll(".panel");
+  let elements = document.querySelectorAll(".panel");
   useEffect(() => {
-    elements.forEach((panel) => {
-      console.log(panel);
+    elements?.forEach((panel) => {
       panel.addEventListener("click", () => {
         removeActiveclass();
-        panel.classList.add("active");
+        panel?.classList.add("active");
       });
     });
   }, []);
 
   const removeActiveclass = () => {
-    elements.forEach((panel) => {
-      panel.classList.remove("active");
+    elements?.forEach((panel) => {
+      panel?.classList.remove("active");
     });
   };
 
