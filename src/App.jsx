@@ -9,8 +9,8 @@ import img5 from "./assets/Anime-5.jpg";
 
 function App() {
   
+  const elements = document.querySelectorAll(".panel");
   useEffect(() => {
-    const elements = document.querySelectorAll(".panel");
     elements.forEach((panel) => {
       console.log(panel);
       panel.addEventListener("click", () => {
