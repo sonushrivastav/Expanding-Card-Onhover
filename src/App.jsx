@@ -11,7 +11,7 @@ function App() {
   
   let elements = document.querySelectorAll(".panel");
   useEffect(() => {
-    elements?.forEach((panel) => {
+    elements.forEach((panel) => {
       panel?.addEventListener("click", () => {
         removeActiveclass();
         panel?.classList.add("active");
@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   const removeActiveclass = () => {
-    elements?.forEach((panel) => {
+    elements.forEach((panel) => {
       panel?.classList.remove("active");
     });
   };
