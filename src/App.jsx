@@ -12,7 +12,7 @@ function App() {
   let elements = document.querySelectorAll(".panel");
   useEffect(() => {
     elements?.forEach((panel) => {
-      panel.addEventListener("click", () => {
+      panel?.addEventListener("click", () => {
         removeActiveclass();
         panel?.classList.add("active");
       });
